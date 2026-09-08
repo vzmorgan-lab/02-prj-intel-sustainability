@@ -1,1 +1,230 @@
-/* Add your CSS here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --intel-blue: #0071c5;
+  --intel-deep-blue: #003c71;
+  --intel-navy: #062b49;
+  --intel-cyan: #00c7fd;
+  --cloud: #f4f7fa;
+  --ink: #17202a;
+  --muted-blue: #496e93;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--intel-navy);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+header {
+  background:
+    radial-gradient(circle at center, rgba(24, 148, 201, 0.43) 0%, rgba(10, 91, 157, 0.48) 38%, rgba(4, 42, 73, 0.72) 100%),
+    url("img/bluetech.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px 50px;
+}
+
+header div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 18px;
+}
+
+header p {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+section {
+  background:
+    radial-gradient(circle at center, rgba(94, 162, 210, 0.34) 0%, rgba(38, 96, 163, 0.28) 32%, rgba(4, 42, 73, 0.72) 100%),
+    url("img/bluetech2.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 50px 28px 60px;
+  scroll-behavior: smooth;
+}
+
+section > div {
+  flex: 0 0 280px;
+  background: linear-gradient(145deg, #ffffff 0%, #e8f5fc 52%, #b9dcf2 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(6, 43, 73, 0.2);
+  border: 2px solid rgba(0, 199, 253, 0.28);
+  scroll-snap-align: center;
+  transform: translateY(0) scale(1);
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease;
+}
+
+section > div:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 22px 36px rgba(6, 43, 73, 0.3);
+  border-color: var(--intel-cyan);
+}
+
+section > div:hover img {
+  transform: scale(1.04);
+}
+
+section > div img {
+  transition: transform 0.35s ease;
+}
+
+section > div p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  transform: translateY(8px);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.35s ease,
+    padding 0.35s ease,
+    transform 0.35s ease;
+}
+
+section > div:hover p {
+  max-height: 360px;
+  opacity: 1;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  transform: translateY(0);
+}
+
+h2 {
+  background: linear-gradient(135deg, var(--intel-blue) 0%, var(--intel-deep-blue) 100%);
+  color: #ffffff;
+  padding: 14px 18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--intel-deep-blue);
+  font-size: 1.35rem;
+  padding: 20px 18px 10px;
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+img[src="img/2022.svg"] {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: var(--intel-navy);
+}
+
+p {
+  padding: 16px 18px 22px;
+  color: var(--muted-blue);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.card-2006 {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(34, 197, 94, 0.18), transparent 16%),
+    radial-gradient(circle at 82% 16%, rgba(59, 130, 246, 0.15), transparent 20%),
+    linear-gradient(145deg, #ffffff 0%, #e8f5fc 52%, #b9dcf2 100%);
+  border: 1px solid #cfe7d8;
+}
+
+.card-2006::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.28), rgba(255,255,255,0.08));
+  pointer-events: none;
+}
+
+.card-2006 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-2006 img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.1);
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 40px 18px 30px;
+  }
+
+  section {
+    padding: 30px 18px 40px;
+    gap: 18px;
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
+
+  section > div {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    scroll-snap-align: none;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}

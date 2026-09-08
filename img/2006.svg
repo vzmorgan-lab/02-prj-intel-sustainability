@@ -1,0 +1,70 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FAFF"/>
+      <stop offset="1" stop-color="#E7F5FF"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="200" y1="80" x2="620" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B4DA2"/>
+      <stop offset="1" stop-color="#0A2E5F"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="280" y1="130" x2="560" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4ADE80"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <g opacity="0.18">
+    <path d="M120 110H700" stroke="#4CB4FF" stroke-width="2"/>
+    <path d="M120 180H700" stroke="#4CB4FF" stroke-width="2"/>
+    <path d="M120 250H700" stroke="#4CB4FF" stroke-width="2"/>
+    <path d="M120 320H700" stroke="#4CB4FF" stroke-width="2"/>
+    <path d="M120 390H700" stroke="#4CB4FF" stroke-width="2"/>
+  </g>
+
+  <g>
+    <rect x="170" y="100" width="460" height="300" rx="34" fill="url(#chip)"/>
+    <rect x="190" y="120" width="420" height="260" rx="28" fill="#0D4F9A" stroke="#73D6FF" stroke-width="2"/>
+
+    <g opacity="0.9">
+      <path d="M230 160H380" stroke="#A9E7FF" stroke-width="10" stroke-linecap="round"/>
+      <path d="M420 160H540" stroke="#A9E7FF" stroke-width="10" stroke-linecap="round"/>
+      <path d="M230 230H330" stroke="#A9E7FF" stroke-width="10" stroke-linecap="round"/>
+      <path d="M470 230H570" stroke="#A9E7FF" stroke-width="10" stroke-linecap="round"/>
+      <path d="M230 300H350" stroke="#A9E7FF" stroke-width="10" stroke-linecap="round"/>
+      <path d="M430 300H570" stroke="#A9E7FF" stroke-width="10" stroke-linecap="round"/>
+    </g>
+
+    <g>
+      <rect x="240" y="140" width="90" height="90" rx="18" fill="#EAF8FF" fill-opacity="0.12"/>
+      <rect x="470" y="140" width="90" height="90" rx="18" fill="#EAF8FF" fill-opacity="0.12"/>
+      <rect x="240" y="210" width="120" height="120" rx="18" fill="#EAF8FF" fill-opacity="0.12"/>
+      <rect x="440" y="210" width="120" height="120" rx="18" fill="#EAF8FF" fill-opacity="0.12"/>
+    </g>
+
+    <g>
+      <circle cx="285" cy="185" r="14" fill="#7AE6FF"/>
+      <circle cx="515" cy="185" r="14" fill="#7AE6FF"/>
+      <circle cx="300" cy="275" r="14" fill="#7AE6FF"/>
+      <circle cx="500" cy="275" r="14" fill="#7AE6FF"/>
+    </g>
+
+    <g>
+      <path d="M560 318C510 328 478 288 440 286C399 284 382 318 345 316C314 314 291 283 263 286C236 289 212 315 182 318" stroke="url(#glow)" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="560" cy="318" r="10" fill="#34D399"/>
+      <path d="M573 305L589 318L573 331" stroke="#22C55E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g>
+      <path d="M610 120C640 120 665 132 684 156C670 155 657 161 646 175C630 165 613 165 598 174C602 149 593 130 610 120Z" fill="#8AE6A2"/>
+      <path d="M603 175C620 165 637 163 650 171C635 181 624 192 621 211C608 202 597 191 603 175Z" fill="#4ADE80"/>
+    </g>
+
+    <g>
+      <text x="235" y="358" fill="#EAF8FF" font-size="58" font-family="Arial, Helvetica, sans-serif" font-weight="700">2006</text>
+      <text x="510" y="118" fill="#A9E7FF" font-size="26" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="2">GHG PEAK</text>
+    </g>
+  </g>
+</svg>

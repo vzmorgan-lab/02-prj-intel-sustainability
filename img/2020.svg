@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Intel chip representing the 2020 RISE strategy</title>
+  <desc id="desc">A close-up semiconductor package on a circuit board with green sustainability accents.</desc>
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071b2c"/>
+      <stop offset="0.5" stop-color="#0c3d4b"/>
+      <stop offset="1" stop-color="#061c2a"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7f2ed"/>
+      <stop offset="0.22" stop-color="#8daaa9"/>
+      <stop offset="0.55" stop-color="#344f58"/>
+      <stop offset="1" stop-color="#0d252f"/>
+    </linearGradient>
+    <linearGradient id="chipTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9d1ca"/>
+      <stop offset="0.35" stop-color="#53747a"/>
+      <stop offset="1" stop-color="#182f39"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#172f39"/>
+      <stop offset="1" stop-color="#050e15"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="traces" width="92" height="92" patternUnits="userSpaceOnUse">
+      <path d="M0 20h42l19 19v53M92 70H54L35 51V0" fill="none" stroke="#48a69a" stroke-opacity=".32" stroke-width="3"/>
+      <circle cx="42" cy="20" r="4" fill="#80d5a4" fill-opacity=".7"/>
+      <circle cx="54" cy="70" r="4" fill="#80d5a4" fill-opacity=".7"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#board)"/>
+  <rect width="960" height="540" fill="url(#traces)"/>
+  <path d="M0 470C190 380 270 500 440 420S750 270 960 350V540H0Z" fill="#061622" opacity=".65"/>
+  <path d="M40 92h240M720 100h200M30 420h230M700 440h220" stroke="#65c8ac" stroke-opacity=".45" stroke-width="5"/>
+  <g fill="#b8cbbb" opacity=".85">
+    <circle cx="42" cy="92" r="7"/><circle cx="282" cy="92" r="7"/><circle cx="715" cy="100" r="7"/><circle cx="920" cy="100" r="7"/>
+    <circle cx="32" cy="420" r="7"/><circle cx="265" cy="420" r="7"/><circle cx="695" cy="440" r="7"/><circle cx="925" cy="440" r="7"/>
+  </g>
+
+  <ellipse cx="480" cy="336" rx="305" ry="135" fill="#020b10" opacity=".85" filter="url(#shadow)"/>
+  <g transform="rotate(-8 480 270)">
+    <rect x="187" y="126" width="586" height="324" rx="22" fill="url(#edge)" stroke="#77b6a0" stroke-width="5"/>
+    <g fill="#d3b870" stroke="#f1dc94" stroke-width="1">
+      <circle cx="211" cy="155" r="6"/><circle cx="245" cy="155" r="6"/><circle cx="279" cy="155" r="6"/><circle cx="313" cy="155" r="6"/><circle cx="347" cy="155" r="6"/><circle cx="381" cy="155" r="6"/><circle cx="415" cy="155" r="6"/><circle cx="449" cy="155" r="6"/><circle cx="483" cy="155" r="6"/><circle cx="517" cy="155" r="6"/><circle cx="551" cy="155" r="6"/><circle cx="585" cy="155" r="6"/><circle cx="619" cy="155" r="6"/><circle cx="653" cy="155" r="6"/><circle cx="687" cy="155" r="6"/><circle cx="721" cy="155" r="6"/>
+      <circle cx="211" cy="421" r="6"/><circle cx="245" cy="421" r="6"/><circle cx="279" cy="421" r="6"/><circle cx="313" cy="421" r="6"/><circle cx="347" cy="421" r="6"/><circle cx="381" cy="421" r="6"/><circle cx="415" cy="421" r="6"/><circle cx="449" cy="421" r="6"/><circle cx="483" cy="421" r="6"/><circle cx="517" cy="421" r="6"/><circle cx="551" cy="421" r="6"/><circle cx="585" cy="421" r="6"/><circle cx="619" cy="421" r="6"/><circle cx="653" cy="421" r="6"/><circle cx="687" cy="421" r="6"/><circle cx="721" cy="421" r="6"/>
+    </g>
+    <g fill="#d3b870">
+      <circle cx="218" cy="190" r="6"/><circle cx="218" cy="224" r="6"/><circle cx="218" cy="258" r="6"/><circle cx="218" cy="292" r="6"/><circle cx="218" cy="326" r="6"/><circle cx="218" cy="360" r="6"/><circle cx="218" cy="394" r="6"/>
+      <circle cx="742" cy="190" r="6"/><circle cx="742" cy="224" r="6"/><circle cx="742" cy="258" r="6"/><circle cx="742" cy="292" r="6"/><circle cx="742" cy="326" r="6"/><circle cx="742" cy="360" r="6"/><circle cx="742" cy="394" r="6"/>
+    </g>
+    <rect x="247" y="170" width="466" height="234" rx="14" fill="url(#chip)" stroke="#bed2c8" stroke-opacity=".7" stroke-width="5"/>
+    <path d="M260 184h440l-86 44H346Z" fill="#eff8f0" opacity=".18"/>
+    <path d="M281 370h398" stroke="#8ed2b0" stroke-opacity=".55" stroke-width="3"/>
+    <circle cx="282" cy="205" r="8" fill="#10232c"/><circle cx="678" cy="369" r="8" fill="#10232c"/>
+    <circle cx="480" cy="279" r="82" fill="url(#chipTop)" opacity=".82" stroke="#c3ded1" stroke-opacity=".35" stroke-width="3"/>
+    <path d="M439 272c20-31 67-32 87-2-20-8-48-6-65 11 18 1 35 8 46 21-29 11-59-1-68-30Z" fill="#b6e3b5" opacity=".95" filter="url(#glow)"/>
+    <path d="M475 300c4-19 12-34 24-46M475 300c-18-8-30-20-39-36M475 300c15-3 30-2 44 4" fill="none" stroke="#d9f2cf" stroke-width="5" stroke-linecap="round"/>
+    <text x="480" y="220" text-anchor="middle" fill="#f0fff5" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="3">intel</text>
+    <text x="480" y="354" text-anchor="middle" fill="#d6f4df" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="4">RISE 2020</text>
+  </g>
+  <rect x="24" y="24" width="912" height="492" rx="20" fill="none" stroke="#b2e3ce" stroke-opacity=".14" stroke-width="2"/>
+</svg>

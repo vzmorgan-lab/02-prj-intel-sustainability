@@ -1,0 +1,69 @@
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06263F"/>
+      <stop offset="0.5" stop-color="#0D3B5E"/>
+      <stop offset="1" stop-color="#071E2F"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="120" y1="60" x2="520" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EAF5FF"/>
+      <stop offset="0.45" stop-color="#B8D7F0"/>
+      <stop offset="1" stop-color="#7EA5C5"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="230" y1="120" x2="420" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7FAFF"/>
+      <stop offset="0.2" stop-color="#DDE7F5"/>
+      <stop offset="0.58" stop-color="#9BABBE"/>
+      <stop offset="1" stop-color="#3D5368"/>
+    </linearGradient>
+    <linearGradient id="green" x1="360" y1="110" x2="505" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7AE7A5"/>
+      <stop offset="1" stop-color="#1F9D6B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="14" flood-color="#021019" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bg)"/>
+
+  <circle cx="121" cy="74" r="80" fill="#72E0A4" fill-opacity="0.18"/>
+  <circle cx="538" cy="286" r="96" fill="#7EC3FF" fill-opacity="0.12"/>
+  <circle cx="496" cy="80" r="52" fill="#7AE7A5" fill-opacity="0.18"/>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="70" width="416" height="220" rx="26" fill="url(#panel)" fill-opacity="0.96"/>
+    <rect x="155" y="110" width="330" height="146" rx="18" fill="url(#chip)"/>
+
+    <g opacity="0.8">
+      <path d="M182 142H260" stroke="#1A2735" stroke-width="9" stroke-linecap="round"/>
+      <path d="M182 166H303" stroke="#1A2735" stroke-width="9" stroke-linecap="round"/>
+      <path d="M182 190H286" stroke="#1A2735" stroke-width="9" stroke-linecap="round"/>
+      <path d="M182 214H251" stroke="#1A2735" stroke-width="9" stroke-linecap="round"/>
+    </g>
+
+    <g>
+      <circle cx="397" cy="142" r="38" fill="url(#green)"/>
+      <path d="M387 142L394 149L410 130" stroke="#ECFFF2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M323 129H436" stroke="#ECF6FF" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+      <path d="M323 157H419" stroke="#ECF6FF" stroke-width="7" stroke-linecap="round" opacity="0.62"/>
+      <path d="M323 185H404" stroke="#ECF6FF" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+    </g>
+
+    <g opacity="0.76" stroke="#C4D7EA" stroke-width="4" stroke-linecap="round">
+      <path d="M148 142H128"/>
+      <path d="M148 186H128"/>
+      <path d="M148 230H128"/>
+      <path d="M492 142H512"/>
+      <path d="M492 186H512"/>
+      <path d="M492 230H512"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="124" y="65" width="144" height="32" rx="16" fill="#F8FBFF" fill-opacity="0.7"/>
+    <text x="196" y="86" text-anchor="middle" font-size="17" font-weight="700" fill="#0C2D47" font-family="Arial, Helvetica, sans-serif" letter-spacing="1.5">SUMMIT</text>
+  </g>
+
+  <text x="320" y="318" text-anchor="middle" font-size="24" font-weight="700" fill="#EAF9FF" font-family="Arial, Helvetica, sans-serif" letter-spacing="2.2">INTEL</text>
+</svg>
